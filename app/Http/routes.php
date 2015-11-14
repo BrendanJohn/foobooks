@@ -18,6 +18,16 @@ Route::get('/', function () {
 
 Route::get('/books', 'BookController@getIndex');
 
+Route::get('/practice', 'PracticeController@getBookWithEloquent');
+
+Route::get('/example4', 'PracticeController@getExample4');
+
+Route::get('/example5', 'PracticeController@getExample5');
+
+Route::get('/example6', 'PracticeController@getExample6');
+
+Route::get('/example7', 'PracticeController@getExample7');
+
 Route::get('/books/show/{title}', 'BookController@getShow');
 
 Route::get('/books/create', 'BookController@getCreate');
